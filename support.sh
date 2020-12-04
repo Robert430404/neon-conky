@@ -73,10 +73,6 @@ function support.primeCache {
   echo "${EPOCH}" > "${EPOCH_FILE}"
   echo "${TIMESTAMP}" > "${TIMESTAMP_FILE}"
 
-  if [[ -f "$CACHE_FILE" ]]; then
-    return;
-  fi
-
   if [[ -s "$CACHE_FILE" ]]; then
     if grep -q '[^[:space:]]' < "$CACHE_FILE"; then
       return;
