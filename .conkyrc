@@ -64,10 +64,10 @@ conky.text = [[
 ${color3}RAM:$color $memperc%  -  ${color3}CPU:$color $cpu%  -  ${color3}HDD:$color $fs_used_perc%
 ${voffset 10}${color1}${hr 2}$color$voffset
 ${offset 150}${voffset -18}${color2}${hr 2}$color$voffset$offset
-${voffset 18}${execp /home/robert/.conky/weather.sh}$voffset
+${voffset 18}${execp ~/.conky/weather.sh}$voffset
 ${voffset 10}${color1}${hr 2}$color$voffset
 ${offset 150}${voffset -18}${color2}${hr 2}$color$voffset$offset
 ${voffset 15}${font Ubuntu Mono:style=light:size=22}Latest News$font$voffset
-${execp /home/robert/.conky/news.sh}
+${execp ~/.conky/news.sh}
 
 ]]
